@@ -18,12 +18,11 @@ export default function Board() {
       nextSquares[i] = "X";
     } else {
       nextSquares[i] = "O";
-      setSquares(nextSquares);
-      setIsNext(!xIsNext);
     }
-    nextSquares[i] = "X"; //Assigns value of 'X' to the first element of the array
     setSquares(nextSquares);
+    setIsNext(!xIsNext);
   }
+
   return (
     <>
       <div className="board-row">
